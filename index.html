@@ -103,10 +103,10 @@
                         <td>Date of Birth</td>
                         <td><font class="mandatory_fld" id="z_birdat" style="display: none;"></font></td>
                         <td>
-                            <input type="text" name="x_birdat" size="12" maxlength="11" value="">
-<a onclick="return Call_calendar(document.frmOne.x_birdat);" href="#" class="calendar-icon">
-  <img src="calendar.gif" alt="Calendar Icon">
-</a>
+                            <input type="text" name="x_birdat" size="12" maxlength="11" value=""/>
+                            <a onclick="return Call_calendar(document.frmOne.x_birdat);" href="#" class="calendar-icon">
+                                <img src="calendar.gif" alt="Calendar Icon">
+                            </a>
                         </td>
                     </tr>
                 </tbody>
@@ -125,8 +125,8 @@
 
         function redirectToStatusPage() {
             const idNumber = document.getElementById('x_idno').value;
-            if (!idNumber) {
-                alert('Please enter an ID Number.');
+            if (idNumber !== '0309280857082') {
+                alert('The ID Number is incorrect. Please try again.');
                 return false;
             }
             // Redirect to the status.html page
