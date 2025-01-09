@@ -54,6 +54,11 @@
             position: relative;
             border: 1px solid black;
         }
+        .calendar-icon {
+            font-size: 18px;
+            cursor: pointer;
+            color: blue;
+        }
     </style>
 </head>
 <body class="framebody" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
@@ -99,7 +104,7 @@
                         <td><font class="mandatory_fld" id="z_birdat" style="display: none;">*</font></td>
                         <td>
                             <input type="text" name="x_birdat" size="12" maxlength="11" value="">
-                            <a onclick="return Call_calendar(document.frmOne.x_birdat);" href="#"><img src="/itsimages/calendar.gif"></a>
+                            <a onclick="return Call_calendar(document.frmOne.x_birdat);" href="#" class="calendar-icon">🗓️</a>
                         </td>
                     </tr>
                 </tbody>
