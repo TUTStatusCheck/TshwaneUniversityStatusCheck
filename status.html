@@ -1,0 +1,56 @@
+<html><head>
+<title>ITS iEnabler</title>
+<meta http-equiv="X_UA-Compatible" content="IE=9">
+<meta http-equiv="Expires" content="-1">
+<link rel="stylesheet" type="text/css" href="/itsincludes/css/itscustom.css">
+<script type="text/javascript" src="/itsincludes/js/its_scripts.js"></script>
+<script type="text/javascript" src="/itsincludes/js/overlib.js"></script>
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+<link rel="stylesheet" href="styles.css">
+<script language="Javascript1.2">
+    function printList() {
+    var x_divName="listedDiv";
+
+    var w = window.open('','','left=150,top=100,width=750,height=400,location=no,menubar=yes,status=no,scrollbars=yes,resizable=yes,toolbar=yes');
+    w.document.write(document.getElementById(x_divName).innerHTML);
+    w.document.close();
+    w.focus();
+    w.print();
+    w.close();
+    return false;
+    }
+
+    function PopUp(pagename, windowname, w, h) {
+    var winl = (screen.width - w) / 2;
+    var wint = (screen.height - h) / 2;
+    winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars=1,resizable'
+    win = window.open(pagename, windowname, winprops)
+    if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+  }
+</script>
+
+  
+</head>
+<body class="framebody" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<script>
+function noBack(){window.history.forward();}
+noBack();
+window.onload=noBack;
+window.onpageshow=function(evt){if(evt.persisted)noBack()}
+window.onunload=function(){void(0)}
+</script>
+<div id="listedDiv">
+<h3>Application Results / Status</h3>
+<table id="mi_userdet" class="mi_userdet" cellspacing="0" cellpadding="0" border="1"><tbody><tr><td align="left"><b>Student Number:</b>224317140<br><b>ID Number:</b>0309280857082<br><b>Name:</b>MS MOTSATSI RABOTHATA</td></tr></tbody></table><br><br>
+<table class="rltable" cellspacing="0" cellpadding="2">
+<tbody><tr class="rlheader"><td class="datahdl">Year</td><td class="datahdl">Qualification</td><td class="datahdl">Faculty</td><td class="datahdl">Status</td><td class="datahdl">Academic<br>Choice</td><td class="datahdl">Application<br>Letter</td></tr>
+</tbody></table>
+<br><br>
+</div>
+&nbsp;&nbsp;<input type="button" value="Restart" onclick="location.replace('wtut012pkg.startup');">
+<br>
+<br>
+
+
+</body></html>
