@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>ITS iEnabler</title>
+    <title>Application Results / Status</title>
     <meta http-equiv="X_UA-Compatible" content="IE=9">
     <meta http-equiv="Expires" content="-1">
     <link rel="stylesheet" type="text/css" href="/itsincludes/css/itscustom.css">
@@ -14,8 +14,8 @@
             border-collapse: collapse;
         }
         .rltable td, .rltable th {
-            font-size: 12px; /* Reduced font size for uniformity */
-            padding: 5px; /* Ensures content fits within cells */
+            font-size: 12px;
+            padding: 5px;
             border: 0px solid #ddd;
             text-align: left;
         }
@@ -24,50 +24,18 @@
             font-weight: bold;
         }
     </style>
-    <script language="Javascript1.2">
-        function printList() {
-            var x_divName = "listedDiv";
-
-            var w = window.open('', '', 'left=150,top=100,width=750,height=400,location=no,menubar=yes,status=no,scrollbars=yes,resizable=yes,toolbar=yes');
-            w.document.write(document.getElementById(x_divName).innerHTML);
-            w.document.close();
-            w.focus();
-            w.print();
-            w.close();
-            return false;
-        }
-
-        function PopUp(pagename, windowname, w, h) {
-            var winl = (screen.width - w) / 2;
-            var wint = (screen.height - h) / 2;
-            var winprops = 'height=' + h + ',width=' + w + ',top=' + wint + ',left=' + winl + ',scrollbars=1,resizable';
-            var win = window.open(pagename, windowname, winprops);
-            if (parseInt(navigator.appVersion) >= 4) {
-                win.window.focus();
-            }
-        }
-    </script>
 </head>
 <body class="framebody" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
     <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
-    <script>
-        function noBack() {
-            window.history.forward();
-        }
-        noBack();
-        window.onload = noBack;
-        window.onpageshow = function(evt) { if (evt.persisted) noBack(); };
-        window.onunload = function() { void (0); };
-    </script>
     <div id="listedDiv">
         <h3>Application Results / Status</h3>
         <table id="mi_userdet" class="mi_userdet" cellspacing="0" cellpadding="0" border="1">
             <tbody>
                 <tr>
                     <td align="left">
-                        <b>Student Number:</b> 251147825 <br>
-                        <b>ID Number:</b> 0506295108084 <br>
-                        <b>Name:</b> MR DION SHIPALANA<br>
+                        <b>Student Number:</b> 223682570 <br>
+                        <b>ID Number:</b> 0406060396081 <br>
+                        <b>Name:</b> MISS TUMELO SELEMATSELA<br>
                     </td>
                 </tr>
             </tbody>
@@ -83,17 +51,17 @@
                     <td class="datahdl">Academic<br>Choice</td>
                     <td class="datahdl">Application<br>Letter</td>
                 </tr>
-                <tr>
+ <tr>
                     <td>2025</td>
                     <td>ADPJ20: AdvDip (Project Management)</td>
                     <td>MANAGEMENT SCIENCES</td>
                     <td>FA: A: UNCONDITIONAL ACCEPTANCE</td>
                     <td>1</td>
-                    <td><a href="">21-JAN-2025</a></td>
+                    <td><a href="">22-JAN-2025</a></td>
                 </tr>
                 <tr>
                     <td>2025</td>
-                    <td>PDPJ20: PGDip (Project Management)</td>
+                    <td>DPCC25: Dip (Contact Centre Management)</td>
                     <td>MANAGEMENT SCIENCES</td>
                     <td>Waiting for the previous choice to be finalized</td>
                     <td>2</td>
@@ -101,33 +69,16 @@
                 </tr>
                 <tr>
                     <td>2025</td>
-                    <td>ADHR19: AdvDip (Human Resource Management) HRM</td>
+                    <td>DPOM19: Dip (Operations Management)</td>
                     <td>MANAGEMENT SCIENCES</td>
                     <td>Waiting for the previous choice to be finalized</td>
                     <td>3</td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>ADWI21: AdvDip (Wildlife Management)</td>
-                    <td>SCIENCE</td>
-                    <td>Waiting for the previous choice to be finalized</td>
-                    <td>4</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>MDPO18: MPolicing</td>
-                    <td>HUMANITIES</td>
-                    <td>Waiting for the previous choice to be finalized</td>
-                    <td>5</td>
-                    <td></td>
-                </tr>
+               
             </tbody>
         </table>
         <br><br>
     </div>
-    &nbsp;&nbsp;<input type="button" value="Restart" onclick="location.replace('index.html');">
-    <br><br>
 </body>
 </html>
